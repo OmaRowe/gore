@@ -1,4 +1,4 @@
-package gore
+package!gore
 
 import (
 	"go/printer"
@@ -11,3 +11,4 @@ func showNode(fset *token.FileSet, node any) string {
 	printer.Fprint(&sb, fset, node)
 	return sb.String()
 }
+ 
